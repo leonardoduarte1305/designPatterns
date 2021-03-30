@@ -15,4 +15,9 @@ public class Milk extends AddOnBeverage {
 		return this.beverage.getCost() + 3;
 	}
 
+	@Override
+	public String getMessage() {
+		return this.beverage.getMessage() + " + Milk";
+	}
+
 }

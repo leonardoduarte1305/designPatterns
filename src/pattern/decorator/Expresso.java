@@ -8,4 +8,9 @@ public class Expresso extends Beverage {
 		return 5;
 	}
 
+	@Override
+	public String getMessage() {
+		return "Expresso";
+	}
+
 }

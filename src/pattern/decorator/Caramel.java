@@ -15,4 +15,9 @@ public class Caramel extends AddOnBeverage {
 		return this.beverage.getCost() + 4;
 	}
 
+	@Override
+	public String getMessage() {
+		return this.beverage.getMessage() + " + Caramel";
+	}
+
 }

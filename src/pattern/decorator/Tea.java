@@ -7,4 +7,9 @@ public class Tea extends Beverage {
 		return 4;
 	}
 
+	@Override
+	public String getMessage() {
+		return "Tea";
+	}
+
 }
