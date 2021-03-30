@@ -1,10 +1,10 @@
-package patter.observer;
+package pattern.observer;
 
-public class MacPC implements IObserver {
+public class SmartPhone implements IObserver {
 
 	private WhatsAppChat chatToObserve;
 
-	public MacPC(WhatsAppChat chatToObserve) {
+	public SmartPhone(WhatsAppChat chatToObserve) {
 		this.chatToObserve = chatToObserve;
 	}
 
@@ -16,5 +16,4 @@ public class MacPC implements IObserver {
 	public WhatsAppChat getChatToObserve() {
 		return chatToObserve;
 	}
-	
 }
