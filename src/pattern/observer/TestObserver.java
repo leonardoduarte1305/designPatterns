@@ -1,6 +1,6 @@
 package pattern.observer;
 
-public class Test {
+public class TestObserver {
 	public static void main(String[] args) {
 
 		// Instance of Observable
