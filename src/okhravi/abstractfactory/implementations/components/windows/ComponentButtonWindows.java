@@ -1,6 +1,6 @@
 package okhravi.abstractfactory.implementations.components.windows;
 
-import okhravi.abstractfactory.abstractions.Component;
+import okhravi.abstractfactory.interfaces.Component;
 
 public class ComponentButtonWindows implements Component {
     public ComponentButtonWindows() {

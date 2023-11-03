@@ -1,7 +1,10 @@
-package okhravi.factory.implementations;
+package okhravi.factory.implementations.factories;
 
 import okhravi.factory.abstractions.Product;
 import okhravi.factory.abstractions.ProductFactory;
+import okhravi.factory.implementations.products.Computer;
+import okhravi.factory.implementations.products.MobilePhone;
+import okhravi.factory.implementations.products.Tablet;
 
 import java.util.UUID;
 

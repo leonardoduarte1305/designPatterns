@@ -1,4 +1,4 @@
-package okhravi.decorator.implementations;
+package okhravi.decorator.implementations.addons;
 
 import okhravi.decorator.abstractions.AddOnDecorator;
 import okhravi.decorator.abstractions.BeverageComponent;

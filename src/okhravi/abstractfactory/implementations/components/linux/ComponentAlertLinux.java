@@ -1,6 +1,6 @@
 package okhravi.abstractfactory.implementations.components.linux;
 
-import okhravi.abstractfactory.abstractions.Component;
+import okhravi.abstractfactory.interfaces.Component;
 
 public class ComponentAlertLinux implements Component {
     public ComponentAlertLinux() {

@@ -1,4 +1,4 @@
-package okhravi.abstractfactory.abstractions;
+package okhravi.abstractfactory.interfaces;
 
 public interface OperatingSystemComponentsFactory {
     Component createComponentA();

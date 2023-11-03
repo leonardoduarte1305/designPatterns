@@ -6,6 +6,8 @@ import okhravi.observer.pushpull.implementations.WeatherStation;
 
 public class ObserverPushPullTest {
 
+    // Youtube Video
+    // https://youtu.be/_BpmfnqjgzQ?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc
     public static void main(String[] args) {
         WeatherStation weatherStation = new WeatherStation("First message");
 

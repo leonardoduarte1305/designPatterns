@@ -1,11 +1,11 @@
 package okhravi.abstractfactory.implementations.factories;
 
-import okhravi.abstractfactory.abstractions.Component;
-import okhravi.abstractfactory.abstractions.OperatingSystemComponentsFactory;
 import okhravi.abstractfactory.implementations.components.windows.ComponentAlertWindows;
 import okhravi.abstractfactory.implementations.components.windows.ComponentButtonWindows;
 import okhravi.abstractfactory.implementations.components.windows.ComponentTextWindows;
 import okhravi.abstractfactory.implementations.components.windows.ComponentWindowWindows;
+import okhravi.abstractfactory.interfaces.Component;
+import okhravi.abstractfactory.interfaces.OperatingSystemComponentsFactory;
 
 public class OperatingSystemComponentsFactoryForWindows implements OperatingSystemComponentsFactory {
     @Override

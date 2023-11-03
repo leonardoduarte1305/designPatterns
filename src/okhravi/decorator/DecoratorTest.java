@@ -1,11 +1,13 @@
 package okhravi.decorator;
 
-import okhravi.decorator.implementations.CaramelAddOn;
-import okhravi.decorator.implementations.DecafComponent;
-import okhravi.decorator.implementations.SoyMilkAddOn;
+import okhravi.decorator.implementations.addons.CaramelAddOn;
+import okhravi.decorator.implementations.addons.SoyMilkAddOn;
+import okhravi.decorator.implementations.components.DecafComponent;
 
 public class DecoratorTest {
 
+    // Youtube Video
+    // https://youtu.be/GCraGHx6gso?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc
     public static void main(String[] args) {
         // Creating the base component to decorate
         DecafComponent decaf = new DecafComponent();

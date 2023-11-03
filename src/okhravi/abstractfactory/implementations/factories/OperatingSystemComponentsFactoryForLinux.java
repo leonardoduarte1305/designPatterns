@@ -1,11 +1,11 @@
 package okhravi.abstractfactory.implementations.factories;
 
-import okhravi.abstractfactory.abstractions.Component;
-import okhravi.abstractfactory.abstractions.OperatingSystemComponentsFactory;
 import okhravi.abstractfactory.implementations.components.linux.ComponentAlertLinux;
 import okhravi.abstractfactory.implementations.components.linux.ComponentButtonLinux;
 import okhravi.abstractfactory.implementations.components.linux.ComponentTextLinux;
 import okhravi.abstractfactory.implementations.components.linux.ComponentWindowLinux;
+import okhravi.abstractfactory.interfaces.Component;
+import okhravi.abstractfactory.interfaces.OperatingSystemComponentsFactory;
 
 public class OperatingSystemComponentsFactoryForLinux implements OperatingSystemComponentsFactory {
     @Override

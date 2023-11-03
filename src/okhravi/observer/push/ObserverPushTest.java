@@ -6,6 +6,8 @@ import okhravi.observer.push.implementations.SuperComputer;
 
 public class ObserverPushTest {
 
+    // Youtube Video
+    // https://youtu.be/_BpmfnqjgzQ?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc
     public static void main(String[] args) {
         // Creating the Observable
         SpacialStation spacialStation = new SpacialStation("First message");

@@ -1,11 +1,11 @@
 package okhravi.abstractfactory.implementations.factories;
 
-import okhravi.abstractfactory.abstractions.Component;
-import okhravi.abstractfactory.abstractions.OperatingSystemComponentsFactory;
 import okhravi.abstractfactory.implementations.components.macos.ComponentAlertMacOS;
 import okhravi.abstractfactory.implementations.components.macos.ComponentButtonMacOS;
 import okhravi.abstractfactory.implementations.components.macos.ComponentTextMacOS;
 import okhravi.abstractfactory.implementations.components.macos.ComponentWindowMacOS;
+import okhravi.abstractfactory.interfaces.Component;
+import okhravi.abstractfactory.interfaces.OperatingSystemComponentsFactory;
 
 public class OperatingSystemComponentsFactoryForMacOS implements OperatingSystemComponentsFactory {
     @Override

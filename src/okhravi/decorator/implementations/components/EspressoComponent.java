@@ -1,4 +1,4 @@
-package okhravi.decorator.implementations;
+package okhravi.decorator.implementations.components;
 
 import okhravi.decorator.abstractions.BeverageComponent;
 

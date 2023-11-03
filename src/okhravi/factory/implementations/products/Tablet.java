@@ -1,4 +1,4 @@
-package okhravi.factory.implementations;
+package okhravi.factory.implementations.products;
 
 import okhravi.factory.abstractions.Product;
 

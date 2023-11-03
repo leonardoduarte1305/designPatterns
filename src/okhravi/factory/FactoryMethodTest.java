@@ -2,9 +2,16 @@ package okhravi.factory;
 
 import okhravi.factory.abstractions.Product;
 import okhravi.factory.abstractions.ProductFactory;
-import okhravi.factory.implementations.*;
+import okhravi.factory.implementations.factories.BalancedProductFactory;
+import okhravi.factory.implementations.factories.RandomProductFactory;
+import okhravi.factory.implementations.products.Computer;
+import okhravi.factory.implementations.products.MobilePhone;
+import okhravi.factory.implementations.products.Tablet;
 
 public class FactoryMethodTest {
+
+    // Youtube Video
+    // https://youtu.be/EcFVTgRHJLM?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc
     static int computer = 0;
     static int mobilePhone = 0;
     static int tablet = 0;
