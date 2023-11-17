@@ -1,16 +1,18 @@
-package dev.leoduarte.designpatterns.strategy;
+package dev.leoduarte.designpatterns.strategy.implementations;
 
 import dev.leoduarte.designpatterns.strategy.interfaces.Display;
 import dev.leoduarte.designpatterns.strategy.interfaces.Fly;
 import dev.leoduarte.designpatterns.strategy.interfaces.Quack;
+import lombok.Getter;
 
+@Getter
 public class Duck {
 
     Quack quack;
     Fly fly;
     Display display;
 
-    void executeEverything() {
+    public void executeEverything() {
         this.quack.runQuack();
         this.fly.runFly();
         this.display.runDisplay();

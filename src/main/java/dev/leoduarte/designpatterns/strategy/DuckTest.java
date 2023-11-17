@@ -1,5 +1,6 @@
 package dev.leoduarte.designpatterns.strategy;
 
+import dev.leoduarte.designpatterns.strategy.implementations.Duck;
 import dev.leoduarte.designpatterns.strategy.implementations.fly.JetFly;
 import dev.leoduarte.designpatterns.strategy.implementations.fly.NoFly;
 import dev.leoduarte.designpatterns.strategy.implementations.fly.SimpleFly;
@@ -26,9 +27,9 @@ public class DuckTest {
         Duck freneticDuck = new Duck(loudQuack, jetFly, graphicDisplay);
 
         System.out.println("*** Frenetic Duck ***");
-        freneticDuck.quack.runQuack();
-        freneticDuck.fly.runFly();
-        freneticDuck.display.runDisplay();
+        freneticDuck.getQuack().runQuack();
+        freneticDuck.getFly().runFly();
+        freneticDuck.getDisplay().runDisplay();
 
         System.out.println("==================================");
 
@@ -39,9 +40,9 @@ public class DuckTest {
         Duck rubberDuck = new Duck(noQuack, noFly, textDisplay);
 
         System.out.println("*** Rubber Duck ***");
-        rubberDuck.quack.runQuack();
-        rubberDuck.fly.runFly();
-        rubberDuck.display.runDisplay();
+        rubberDuck.getQuack().runQuack();
+        rubberDuck.getFly().runFly();
+        rubberDuck.getDisplay().runDisplay();
 
         System.out.println("==================================");
 
