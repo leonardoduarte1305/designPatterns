@@ -23,12 +23,9 @@ public class LongView extends View {
 
     @Override
     public String getHtmlString() {
-        return String.format("""
-                        This is the HTML version for the LongView: %s
-                        Snippet: %s
-                        Image: %s
-                        URL: %s
-                        """,
+
+
+        return String.format("This is the HTML version for the LongView: %s Snippet: %s Image: %s URL: %s",
                 this.resource.getName(),
                 this.resource.getSnippet(),
                 Arrays.toString(this.resource.getImageAsCharArray()),
