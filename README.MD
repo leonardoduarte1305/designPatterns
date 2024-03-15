@@ -14,7 +14,7 @@ Diagrams containing all design patterns currently present in this project can be
  - Creational patterns
 
 ## Behavioral Patterns
- - Chain of Responsibility
+ - [Chain of Responsibility](./src/main/java/dev/leoduarte/designpatterns/behavioral/chainofresponsibility)
  - [Command](./src/main/java/dev/leoduarte/designpatterns/behavioral/command)
  - Interpreter
  - Iterator
