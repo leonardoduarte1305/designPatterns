@@ -1,10 +1,17 @@
 package dev.leoduarte.streams;
 
+import dev.leoduarte.streams.auxiliary.AnotherOrder;
+import dev.leoduarte.streams.auxiliary.Constants;
 import dev.leoduarte.streams.auxiliary.Order;
 import dev.leoduarte.streams.auxiliary.Product;
+import dev.leoduarte.streams.auxiliary.ProductAndQuantity;
+import dev.leoduarte.streams.auxiliary.Seller;
 
 import java.math.BigDecimal;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import static dev.leoduarte.streams.auxiliary.Constants.ORDERS;
@@ -34,5 +41,40 @@ public class Combined {
                 .distinct()
                 .collect(Collectors.toList());
         System.out.println("listOfItemsBoughtByAllCustomers = " + listOfItemsBoughtByAllCustomers);
+
+        // Given a list of sales with seller, product and quantity, group the sales by seller and then get:
+        //The seller with the highest number of sales.
+        //The best-selling product by each seller.
+        final Map<Seller, List<AnotherOrder>> ordersBySellers = Constants.getSellers()
+                .stream()
+                .collect(Collectors.groupingBy(
+                        Function.identity(),
+                        Collectors.flatMapping(seller -> seller.getOrders().stream(),
+                                Collectors.toList())
+                ));
+
+        final Seller sellerWithHighestNumberOfSales = ordersBySellers.keySet()
+                .stream()
+                .max(Comparator.comparingInt(seller -> seller.getOrders().size()))
+                .orElse(null);
+        System.out.println("sellerWithHighestNumberOfSales = " + sellerWithHighestNumberOfSales);
+
+        final Map<String, Product> bestSellingProductBySellersName = ordersBySellers.keySet()
+                .stream()
+                .collect(Collectors.toMap(
+                        Seller::getName,
+                        seller -> seller.getOrders().stream()
+                                .flatMap(order -> order.getProducts().stream())
+                                .collect(Collectors.groupingBy(
+                                        ProductAndQuantity::getProduct,
+                                        Collectors.summingInt(ProductAndQuantity::getQuantity)))
+                                .entrySet()
+                                .stream()
+                                .max(Map.Entry.comparingByValue())
+                                .map(Map.Entry::getKey)
+                                .orElseThrow()));
+        System.out.println("bestSellingProductBySellersName = " + bestSellingProductBySellersName);
+
+
     }
 }
